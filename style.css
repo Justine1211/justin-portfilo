@@ -1,0 +1,833 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
+/* navbar styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+/* Projects Section */
+#projects {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+#projects .content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#projects .title span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4070f4;
+}
+
+#projects .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+#projects .box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+#projects .box:hover {
+  transform: translateY(-5px);
+}
+
+#projects .icon {
+  font-size: 32px;
+  color: #4070f4;
+  margin-bottom: 15px;
+}
+
+#projects .topic {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#projects .box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+  color: #4070f4;
+}
+
+nav.sticky .menu a {
+  color: #FFF;
+}
+
+nav.sticky .menu a:hover {
+  color: #0E2431;
+}
+
+.navbar .media-icons a {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+nav.sticky .media-icons a {
+  color: #FFF;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+nav .menu-btn {
+  color: #4070f4;
+}
+
+nav.sticky .menu-btn {
+  color: #FFF;
+}
+
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* home section styling */
+/* Hero Section */
+
+/* Wrapper to align text and image side by side */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+  }
+
+  .home-text {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .text-one {
+    font-size: 24px;
+    color: #0E2431;
+  }
+
+  .text-two {
+    font-size: 45px;
+    font-weight: bold;
+    color: #4070f4;
+  }
+
+  .text-three {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #0E2431;
+  }
+
+  .text-four {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+  }
+
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 250px;
+  }
+
+  .hero-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 4px solid #4070f4;
+  border-radius: 0;
+  margin-right: 30px;
+  transition: transform 0.5s ease;
+}
+
+.hero-photo:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+
+
+
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .home-image {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+
+
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section {
+  padding-top: 40px;
+}
+
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+section .title span {
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background :#4070f4;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details .left {
+  width: 45%;
+}
+
+.about .left img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about .left img,
+.about-photo {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image circular */
+  border: 4px solid #4070f4;
+  box-shadow: 0 8px 20px rgba(64, 112, 244, 0.15);
+}
+
+
+.about-details .right {
+  width: 55%;
+}
+
+section .topic {
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: #0E2431;
+}
+
+section .button {
+  margin: 16px 0;
+}
+
+section .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover {
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+/* Education Section */
+.education {
+  background: #F0F8FF;
+  padding: 60px 0;
+}
+
+.education .education-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.edu-box {
+  background: #fff;
+  border: 1px solid #4070f4;
+  border-radius: 12px;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(64, 112, 244, 0.1);
+}
+
+.edu-box h3 {
+  font-size: 24px;
+  color: #0E2431;
+  margin-bottom: 10px;
+}
+
+.edu-box p {
+  color: #0E2431;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+
+/* My Skills CSS */
+
+/* Skill Icons Styling */
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+/* Align skill text and icons vertically */
+.skills-details .box {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* My Services CSS */
+#projects .title span {
+  color: #111; /* or use #222 or #000 for black */
+}
+
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+  background: #4070f4;
+  color: #fff;
+}
+
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #090505;
+}
+
+/* Contact Me CSS */
+/* Contact Section - Fully Centered */
+/* Make entire contact section centered */
+/* FORCE CONTACT SECTION TO CENTER */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Center the header text */
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Contact form styling */
+.message-form {
+  width: 100%;
+}
+
+.message-form .form-group {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.message-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  border-color: #4070f4;
+  outline: none;
+}
+
+.message-form .form-btn {
+  width: 100%;
+  background-color: #4070f4;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.message-form .form-btn:hover {
+  background-color: #3058c7;
+}
+
+
+/* Footer CSS */
+footer {
+  background: #3460db;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;
+  ;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Contact Section Centered */
+/* Contact Section Centered */
+.contact {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-header h2 {
+  color: #4070f4;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.message-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.message-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.message-form .form-btn {
+  width: 100%;
+  background-color: #4070f4;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message-form .form-btn:hover {
+  background-color: #3058c7;
+}
+
+/* 🔽 Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 10px 15px;
+  }
+
+  .contact-header h2,
+  .contact-header p {
+    text-align: center;
+  }
+
+  .message-form {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .message-form input,
+  .message-form textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .message-form .form-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #2f5bea, #0b79d0);
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin: 0;
+  position: relative;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about .about-details .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .about .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.active .menu {
+    left: 0;
+  }
+
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 15px 0;
+  }
+
+  nav.sticky .menu a:hover {
+    color: #4070f4;
+  }
+
+  nav .navbar .media-icons {
+    display: none;
+  }
+
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+
+  .home .text-two {
+    font-size: 65px;
+  }
+
+  .home .text-three {
+    font-size: 35px;
+  }
+
+  .skills .skills-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skills-details .text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .skills-details .boxes {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .contact .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 55px;
+  }
+
+  .home .text-three {
+    font-size: 33px;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 50px;
+    color: #4070f4;
+  }
+}
+/* Reusable hover animation */
+.hover-animate {
+  transition: transform 0.4s ease;
+}
+
+.hover-animate:hover {
+  transform: scale(1.05) rotate(1deg);
+}
